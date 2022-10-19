@@ -41,7 +41,7 @@ class HomeState extends ConsumerState<Home> {
       bottomNavigationBar: CurvedNavigationBar(
         items: navItems,
         color: Colors.grey.shade700,
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.grey.shade900,
         index: menuIndex,
           onTap: (i) {
             setState(() {
