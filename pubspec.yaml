@@ -16,6 +16,7 @@ dependencies:
   google_fonts:
   flutter_riverpod:
   cached_network_image: 3.2.1
+  curved_navigation_bar:
 
 dev_dependencies:
   flutter_test:
