@@ -3,8 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ignotus/core/app_constants.dart';
 
 class Header extends StatelessWidget {
+  final String headerText;
+
   const Header({
     Key? key,
+    required this.headerText,
   }) : super(key: key);
 
   @override

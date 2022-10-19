@@ -18,7 +18,7 @@ class MenuPageState extends ConsumerState<MenuPage> {
   Widget build(BuildContext context) {
     return Column(
       children: const [
-        Header(),
+        Header(headerText: menuHeaderText),
         SizedBox(height: padding_25),
         SearchBar(),
         SizedBox(height: padding_25),
