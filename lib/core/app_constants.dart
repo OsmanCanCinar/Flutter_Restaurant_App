@@ -8,7 +8,8 @@ const String appName = "Ignotus";
 const String menuTitle = "Menu";
 const String billTitle = "Bill";
 const String homeFabTip = "Time to Pay!";
-const String headerText = "Find the best\nPizza for you";
+const String menuHeaderText = "Find the best\nPizza for you";
+const String billHeaderText = "Invoice";
 const String searchHint = "Find your pizza..";
 
 // Dimensions
@@ -57,8 +58,7 @@ const menuPriceList = [
   "\$8.00",
 ];
 
-const categoryList =
-[
+const categoryList = [
   "Pizza",
   "Beverages",
   "Desserts",

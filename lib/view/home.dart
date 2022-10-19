@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ignotus/core/app_constants.dart';
@@ -13,10 +14,9 @@ class Home extends ConsumerStatefulWidget {
 }
 
 class HomeState extends ConsumerState<Home> {
-  final List<BottomNavigationBarItem> navItems = const [
-    BottomNavigationBarItem(icon: Icon(Icons.menu_book), label: menuTitle),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.article_outlined), label: billTitle),
+  final List<Icon> navItems = const [
+    Icon(Icons.menu_book),
+    Icon(Icons.article_outlined),
   ];
 
   @override
@@ -37,24 +37,18 @@ class HomeState extends ConsumerState<Home> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        elevation: elevation_5,
-        onPressed: () {
-          //direct to Pay the bill Page
-        },
-        tooltip: homeFabTip,
-        child: const Icon(Icons.handshake),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: menuIndex == 0 ? const MenuPage() : const BillPage(),
-      bottomNavigationBar: BottomNavigationBar(
-          items: navItems,
-          currentIndex: menuIndex,
+      bottomNavigationBar: CurvedNavigationBar(
+        items: navItems,
+        color: Colors.grey.shade700,
+        backgroundColor: Colors.grey.shade900,
+        index: menuIndex,
           onTap: (i) {
             setState(() {
               ref.read(indexProvider.notifier).value = i;
             });
-          }),
+          },
+      ),
     );
   }
 }
