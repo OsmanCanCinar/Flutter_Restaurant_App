@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ignotus/core/app_constants.dart';
+import 'package:ignotus/common/app_constants.dart';
 
 class SearchBar extends ConsumerStatefulWidget {
   const SearchBar({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:ignotus/core/app_constants.dart';
+import 'package:ignotus/common/app_constants.dart';
 
 class ItemTile extends StatelessWidget {
   final int index;

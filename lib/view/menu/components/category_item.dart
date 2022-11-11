@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ignotus/core/app_constants.dart';
-import 'package:ignotus/view_model/providers/menu_providers.dart';
+import 'package:ignotus/common/app_constants.dart';
+import 'package:ignotus/controller/menu_controllers/menu_providers.dart';
 
 class CategoryItem extends ConsumerStatefulWidget {
   final String itemCategory;
