@@ -1,10 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ignotus/core/app_constants.dart';
+import 'package:ignotus/common/app_constants.dart';
 import 'package:ignotus/view/bill/bill.dart';
 import 'package:ignotus/view/menu/menu.dart';
-import 'package:ignotus/view_model/providers/home_providers.dart';
+import 'package:ignotus/controller/menu_controllers/home_providers.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ignotus/core/app_constants.dart';
+import 'package:ignotus/common/app_constants.dart';
 
 class Header extends StatelessWidget {
   final String headerText;
